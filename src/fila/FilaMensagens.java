@@ -1,10 +1,10 @@
-package queue;
+package fila;
 
-import entities.Message;
+import entidades.Mensagem;
 
-public class MessageQueue {
+public class FilaMensagens {
     final int N = 3;
-    Message[] queue = new Message[N];
+    Mensagem[] queue = new Mensagem[N];
     int head, tail, index;
 
     public void init() {
@@ -19,7 +19,7 @@ public class MessageQueue {
         return (index == N);
     }
 
-    public void enqueue(Message elem) {
+    public void enqueue(Mensagem elem) {
         if (isFull()) {
             System.out.println("[FULL QUEUE]");
         } else {
@@ -30,15 +30,15 @@ public class MessageQueue {
         }
     }
 
-    public Message dequeue() {
-        Message elem = queue[head];
+    public Mensagem dequeue() {
+        Mensagem elem = queue[head];
         index--;
 
         head = (head - 1) % N;
         return elem;
     }
 
-    public Message first () {
+    public Mensagem first () {
 
         return( queue[head]);
     }

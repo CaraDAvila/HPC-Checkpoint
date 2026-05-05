@@ -1,13 +1,13 @@
-package entities;
+package entidades;
 
-public class Message {
+public class Mensagem {
 String name;
 String contact;
 int filaReclamacao;
 int filaSugestao;
 String message;
 
-    public Message(String name, String contact, int contactReason, String message) {
+    public Mensagem(String name, String contact, int contactReason, String message) {
         this.name = name;
         this.contact = contact;
         this.filaReclamacao = filaReclamacao;
