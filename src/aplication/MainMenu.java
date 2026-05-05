@@ -1,5 +1,7 @@
-import java.util.Scanner;
+package aplication;
 
+import java.util.Scanner;
+//RM
 public class MainMenu {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
