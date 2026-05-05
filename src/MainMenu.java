@@ -24,13 +24,19 @@ public class MainMenu {
 
                     System.out.println("Mensagem (texto):");
                     input.next();
+                    break;
 
-                    System.out.println("Enviada resposta para cliente: sua solicitação já foi resolvida. Obrigado!!!");
                 case 2:
+                    System.out.println("Enviada resposta para cliente: sua solicitação já foi resolvida. Obrigado!!!");
+                    break;
 
+                case 3:
+                    System.out.println("Enviada resposta para cliente: sua solicitação já foi resolvida. Obrigado!!!");
+                    break;
 
+                default:
             }
         }
-        while (option != 2);
+        while (option != 3);
     }
 }
