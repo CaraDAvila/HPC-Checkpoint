@@ -10,17 +10,27 @@ public class MainMenu {
             option = input.nextInt();
 
             switch (option) {
+
                 case 1:
+
                     System.out.println("Deseja informar seu nome? (0- sim/ 2-não) ");
                     input.nextLine();
-                    break;
 
-                case 2:
                     System.out.println("Email/telefone:");
                     input.next();
 
+                    System.out.println("Motivo do contato (1-reclamação/ 2-sugestão):");
+                    input.next();
+
+                    System.out.println("Mensagem (texto):");
+                    input.next();
+
+                    System.out.println("Enviada resposta para cliente: sua solicitação já foi resolvida. Obrigado!!!");
+                case 2:
+
+
             }
         }
-        while (option != 2) ;
+        while (option != 2);
     }
 }
