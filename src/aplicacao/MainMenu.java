@@ -30,7 +30,7 @@ public class MainMenu {
 
                     System.out.println("Deseja informar seu nome? (1- sim/ 2-não) ");
                     sc.nextLine();
-                    if ( = 1)
+                    //if ( = 1)//
                     {
                     System.out.println("Nome: ");
                         sc.nextLine();
